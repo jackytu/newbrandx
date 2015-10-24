@@ -57,7 +57,8 @@ TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-gb'
+LANGUAGE_CODE = 'zh_CN'
+USE_L10N = True
 
 LANGUAGES = (
     ('en-gb', 'English'),
