@@ -1,0 +1,88 @@
+{#% extends 'oscar/basket/partials/basket_content.html' %#}
+{% load i18n %}
+{% load thumbnail %}
+{% load currency_filters %}
+{% load staticfiles %}
+{#% load purchase_info_tags %#}
+
+{% block basket_form_headers %}
+{% endblock %}
+
+{% block milk_report %}
+<div class = "row">
+<table class = "table table-hover">
+    <tr><td>Oct, 2015</td><td>Oct, 2014</td><td>趋势</td><td>品牌</td><td>得分</td><td>变化率</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    </tr>
+</table>
+</div>
+{% endblock %}
+
+{% block index_curve %}
+<h2>奶粉指数曲线</h2>
+<img src="static/demo/img/rankx/milk_index.jpg"></img>
+{% endblock %}
+
+{% block index_others %}
+<h2>其他品牌</h2>
+其他品牌奶粉的历史记录
+{% endblock %}
+
+{% block index_long_history %}
+<h2>更长历史</h2>
+<div class = "row">
+<table class = "table table-hover">
+    <tr><td>Oct, 2015</td><td>Oct, 2014</td><td>趋势</td><td>品牌</td><td>得分</td><td>变化率</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    </tr>
+</table>
+</div>
+{% endblock %}
+
+{% block index_history_best %}
+<h2>历史最佳</h2>
+<div class = "row">
+<table class = "table table-hover">
+    <tr><td>Oct, 2015</td><td>Oct, 2014</td><td>趋势</td><td>品牌</td><td>得分</td><td>变化率</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
+    </tr>
+</table>
+</div>
+{% endblock %}

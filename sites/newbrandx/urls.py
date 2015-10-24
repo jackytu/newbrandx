@@ -19,6 +19,11 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^rankx/', views.rankx, name='rank'),
+    url(r'^milk', views.milk, name='milk'),
+    url(r'^cloth/', views.cloth, name='cloth'),
+    url(r'^toy/', views.toy, name='toy'),
+    url(r'^edu/', views.edu, name='edu'),
+    url(r'^health/', views.health, name='edu'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^jsi18n/$', 'django.views.i18n.javascript_catalog', js_info_dict),
