@@ -8,10 +8,14 @@
 {% block basket_form_headers %}
 {% endblock %}
 
-{% block milk_report %}
+{% block embeded_report %}
+{% include report1 %}
+{% endblock %}
 
+<h1> test  </h1>
+{% block milk_report %}
 <div class = "row">
-<table class = "table table-hover">
+    <table class = "table table-hover">
     <tr><td>Oct, 2015</td><td>Oct, 2014</td><td>趋势</td><td>品牌</td><td>得分</td><td>变化率</td></tr>
     <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>
     <tr><td>1</td><td>2</td><td>⬇️</td><td>美素佳儿</td><td>90</td><td>1%</td></tr>

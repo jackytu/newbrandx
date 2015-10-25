@@ -1,3 +1,4 @@
+import datetime
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Milk
@@ -9,7 +10,11 @@ def rankx(request):
     return render(request, 'rankx/rankx.html')
 
 def milk(request):
-    context = { 'indexs' : Milk.objects.filter(pub_date__range = ('2013-10-24', '2015-10-31'))}
+    report1 = datetime.date.today().strftime("rankx/reports/milk/milk_%Y_%m.html")
+    context = { 'indexs' : Milk.objects.filter(pub_date__range = ('2013-10-24', '2015-10-31')),
+                'report1' : report1,
+            }
+
     print context
     return render(request, 'rankx/milk.html', context)
 

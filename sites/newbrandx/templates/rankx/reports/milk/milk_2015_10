@@ -1,0 +1,14 @@
+
+<div class = "row">
+<table class = "table table-hover">
+<tr><td>2015_10</td><td>2014_10</td><td>趋势</td><td>品牌</td><td>得分</td><td>变化率</td></tr>
+    <tr><td>3</td><td>3</td><td>up</td><td>Nutrilon</td><td>90</td><td>0.0</td></tr>
+    
+    <tr><td>1</td><td>1</td><td>up</td><td>Friso</td><td>90</td><td>0.0</td></tr>
+    
+    <tr><td>2</td><td>2</td><td>up</td><td>WyethGolden</td><td>90</td><td>0.0</td></tr>
+    
+    <tr><td>4</td><td>4</td><td>up</td><td>BeingMate</td><td>90</td><td>0.0</td></tr>
+    
+</table>
+</div>
