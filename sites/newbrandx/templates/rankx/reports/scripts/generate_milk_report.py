@@ -114,8 +114,8 @@ content += '<tr><td>{}</td><td>{}</td><td>趋势</td><td>品牌</td><td>得分</
 idx2 = 1
 for brand, data in sort2:
     content += '''
-    <tr><td>{}</td><td>{}</td><td>{}</td><td>{}</td><td>90</td><td>{}</td></tr>
-    '''.format(idx2, brand_lyear[brand], data['trend'], brand, data['rating'])
+    <tr><td>{}</td><td>{}</td><td>{}</td><td>{}</td><td>{}</td><td>{}</td></tr>
+    '''.format(idx2, brand_lyear[brand], data['trend'], brand, data['this_year'], data['rating'])
     idx2 += 1
 content += '''
 </table>

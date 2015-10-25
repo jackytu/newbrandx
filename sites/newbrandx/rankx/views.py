@@ -15,9 +15,11 @@ def rankx(request):
 def milk(request):
     report1 = datetime.date.today().strftime("rankx/reports/milk/milk_%Y_%m.html")
     report2 = datetime.date.today().strftime("rankx/reports/milk/milk_curve.html")
+    report3 = datetime.date.today().strftime("rankx/reports/milk/milk_best.html")
     context = { 'indexs' : Milk.objects.filter(pub_date__range = ('2013-10-24', '2015-10-31')),
                 'report1' : report1,
                 'report2' : report2,
+                'report3' : report3,
             }
     return render(request, 'rankx/milk.html', context)
 

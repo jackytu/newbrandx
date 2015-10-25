@@ -48,4 +48,6 @@ class Milk(models.Model):
     def __unicode__(self):
         return self.brand_record
 
-
+class Best(models.Model):
+    year = models.IntegerField(default=1900)
+    winner = models.ForeignKey(Brand, related_name = 'best_brand_name')
