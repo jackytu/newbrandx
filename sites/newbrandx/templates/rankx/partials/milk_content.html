@@ -27,52 +27,8 @@
 
 
 {% block index_curve %}
-
-<div class="panel panel-default">
-    <div id="chart_panel" class="panel-body" 
-        style="width:100%;height:314px">
-    </div>
-</div>
-
-<script type="text/javascript">
-
-$(document).ready(function() {
-    // Glucose Average by Day chart
-     var avgByDayOptions = {
-        chart: {
-            renderTo: 'chart_panel',
-            type: 'line',
-        },
-        legend: { enabled: false },
-        title: { text: 'Average Glucose by Day' },
-        subtitle: { text: 'Last 14 Days' },
-        xAxis: { 
-            title: { 
-                    text: 'history' 
-                }, 
-                labels: { 
-                    rotation: -45 
-                } 
-            },
-        yAxis: { 
-            title: { text: 'rank' } },
-        series: [{}],
-    };
-
-    var chartDataUrl = "{% url 'milk_chart_view' %}";
-    $.getJSON(chartDataUrl,
-        function(data) {
-            avgByDayOptions.xAxis.categories = data['x-aris'];
-            avgByDayOptions.series[0].name = data[0]['name'];
-            avgByDayOptions.series[0].data = data[0]['chart_data']['values'];
-            var chart = new Highcharts.Chart(avgByDayOptions);
-    });
-
-} );
-</script>
-
 <h2>奶粉指数曲线</h2>
-<img src="static/demo/img/rankx/milk_index.jpg"></img>
+{% include report2 %}
 {% endblock %}
 
 {% block index_others %}

@@ -72,10 +72,10 @@ print brand_data
 for brand, data in brand_data.items():
     meta = {}
     meta['name'] = brand
-    meta['value'] = []
+    meta['data'] = []
 
     for date in pub_date_list:
-        meta['value'].append(data[date])
+        meta['data'].append(data[date])
 
     output_data['chart_data'].append(meta)
 

@@ -1,1 +1,1 @@
-{"chart_data": [{"name": "Nutrilon", "value": [3, 3]}, {"name": "Friso", "value": [1, 1]}, {"name": "WyethGolden", "value": [2, 2]}, {"name": "BeingMate", "value": [4, 4]}], "x-aris": ["2014-10", "2015-10"]}
+{"chart_data": [{"data": [3, 3], "name": "Nutrilon"}, {"data": [1, 1], "name": "Friso"}, {"data": [2, 2], "name": "WyethGolden"}, {"data": [4, 4], "name": "BeingMate"}], "x-aris": ["2014-10", "2015-10"]}

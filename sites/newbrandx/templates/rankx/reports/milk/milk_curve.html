@@ -1,0 +1,50 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+<div class="panel panel-default">
+    <div id="chart_panel" class="panel-body" 
+        style="width:100%;height:314px">
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(function() {
+    // Glucose Average by Day chart
+     var avgByDayOptions = {
+        chart: {
+            renderTo: 'chart_panel',
+            type: 'line',
+        },
+        legend: { enabled: false },
+        title: { text: 'Average Glucose by Day' },
+        subtitle: { text: 'Last 14 Days' },
+        xAxis: { 
+            title: { 
+                    text: 'history' 
+                }, 
+                labels: { 
+                    rotation: -45 
+                } 
+            },
+        yAxis: { 
+            title: { text: 'rank' } },
+        series: [{}],
+    };
+
+    var chartDataUrl = "{% url 'milk_chart_view' %}";
+    $.getJSON(chartDataUrl,
+        function(data) {
+            avgByDayOptions.xAxis.categories = data['x-aris'];
+            for (var i = 0; i < data['chart_data'].length; i++) {
+            	avgByDayOptions.series[i] = {};
+            	avgByDayOptions.series[i].name = data['chart_data'][i]['name'];
+            	avgByDayOptions.series[i].data = data['chart_data'][i]['data'];            	
+            };
+            var chart = new Highcharts.Chart(avgByDayOptions);
+        });
+
+} );
+</script>

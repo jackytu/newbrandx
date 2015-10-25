@@ -6,10 +6,14 @@
 {% load staticfiles %}
 
 {% block scripts %}
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
 {% compress js %}
 
-<script src="{% static "demo/js/highcharts/js/highcharts.js" %}" type="text/javascript" charset="utf-8"></script>
-<script src="{% static "demo/js/highcharts/js/modules/exporting.js" %}" type="text/javascript" charset="utf-8"></script>
+<!--script src="{% static "demo/js/highcharts/js/highcharts.js" %}" type="text/javascript" charset="utf-8"></script-->
+<!--script src="{% static "demo/js/highcharts/js/modules/exporting.js" %}" type="text/javascript" charset="utf-8"></script-->
 
 {% endcompress %}
 {% endblock scripts %}
@@ -39,11 +43,3 @@
     {% include 'rankx/partials/milk_content.html' %}
 {% endblock content %}
 
-{% block onbodyload %}
-    {{ block.super }}
-    {# We pass in the URL to send AJAX requests to #}
-    var options = {
-        'basketURL': '{% url 'basket:summary' %}'
-    };
-    oscar.basket.init(options);
-{% endblock %}

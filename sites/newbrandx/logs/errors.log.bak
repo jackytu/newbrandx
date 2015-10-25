@@ -1,0 +1,1197 @@
+ERROR 2015-10-24 12:05:42,381 base 11243 4450811904 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/urls.py", line 10, in <module>
+    from rankx import views
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 3, in <module>
+    from .models import MilkIndex
+ImportError: cannot import name MilkIndex
+ERROR 2015-10-24 12:06:45,645 base 11433 4597391360 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 12, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 159, in render
+    return template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 211, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/query.py", line 144, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/debug_toolbar/panels/sql/tracking.py", line 159, in execute
+    return self._record(self.cursor.execute, sql, params)
+  File "/Library/Python/2.7/site-packages/debug_toolbar/panels/sql/tracking.py", line 101, in _record
+    return method(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.10-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.10-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'brandrank.rankx_milk' doesn't exist")
+ERROR 2015-10-24 13:39:20,745 base 19711 4578570240 Internal Server Error: /admin/rankx/milk/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/encoding.py", line 92, in force_text
+    s = six.text_type(s)
+TypeError: coercing to Unicode: need string or buffer, Brand found
+ERROR 2015-10-24 13:39:51,429 base 19711 4578570240 Internal Server Error: /admin/rankx/milk/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/encoding.py", line 92, in force_text
+    s = six.text_type(s)
+TypeError: coercing to Unicode: need string or buffer, Brand found
+ERROR 2015-10-24 13:42:07,573 base 20856 4574478336 Internal Server Error: /admin/rankx/milk/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/contrib/admin/options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/encoding.py", line 92, in force_text
+    s = six.text_type(s)
+TypeError: coercing to Unicode: need string or buffer, Brand found
+ERROR 2015-10-24 14:31:12,110 base 23100 4558196736 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 12, in milk
+    context = { 'indexs' : Milk.objects.filter(pub_date__range = (2013-10-24, 2015-10-31))}
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/sql/query.py", line 1209, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/sql/query.py", line 1102, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/lookups.py", line 101, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/lookups.py", line 139, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/fields/__init__.py", line 1313, in get_prep_lookup
+    return super(DateField, self).get_prep_lookup(lookup_type, value)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/fields/__init__.py", line 729, in get_prep_lookup
+    return [self.get_prep_value(v) for v in value]
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/fields/__init__.py", line 1317, in get_prep_value
+    return self.to_python(value)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/db/models/fields/__init__.py", line 1274, in to_python
+    parsed = parse_date(value)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/utils/dateparse.py", line 60, in parse_date
+    match = date_re.match(value)
+TypeError: expected string or buffer
+ERROR 2015-10-25 02:53:26,479 base 97098 4574011392 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/urls.py", line 10, in <module>
+    from rankx import views
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 15
+    'report1' : report1
+            ^
+SyntaxError: invalid syntax
+ERROR 2015-10-25 02:54:20,804 base 97250 4380643328 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 159, in render
+    return template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 211, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: {{ report1 }}
+ERROR 2015-10-25 02:55:07,886 base 97250 4380643328 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 255, in do_include
+    (bits[0], option))
+TemplateSyntaxError: Unknown argument for u'include' tag: u'report1'.
+ERROR 2015-10-25 02:57:34,722 base 97250 4380643328 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 159, in render
+    return template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 211, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: {{ report1 }}
+ERROR 2015-10-25 06:10:54,289 base 12075 4423880704 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 159, in render
+    return template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 211, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'milk_chart_view' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+ERROR 2015-10-25 06:12:32,103 base 16740 4496080896 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 159, in render
+    return template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 211, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 578, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/urlresolvers.py", line 495, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'milk_chart_view' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+ERROR 2015-10-25 07:53:31,717 base 18003 4416868352 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'compress'
+ERROR 2015-10-25 08:12:00,266 base 18003 4416868352 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 108, in render_compressed
+    rendered_output = self.render_output(compressor, mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 121, in render_output
+    return compressor.output(mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 46, in output
+    self.split_contents()
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 19, in split_contents
+    basename = self.get_basename(attribs['src'])
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/base.py", line 89, in get_basename
+    "compressed" % (url, base_url))
+UncompressableFileError: 'static/demo/js/highcharts/js/highcharts.js' isn't accessible via COMPRESS_URL ('/static/') and can't be compressed
+ERROR 2015-10-25 08:12:43,369 base 18003 4416868352 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 108, in render_compressed
+    rendered_output = self.render_output(compressor, mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 121, in render_output
+    return compressor.output(mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 46, in output
+    self.split_contents()
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 19, in split_contents
+    basename = self.get_basename(attribs['src'])
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/base.py", line 89, in get_basename
+    "compressed" % (url, base_url))
+UncompressableFileError: 'demo/js/highcharts/js/highcharts.js' isn't accessible via COMPRESS_URL ('/static/') and can't be compressed
+ERROR 2015-10-25 08:12:48,171 base 18003 4421074944 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 108, in render_compressed
+    rendered_output = self.render_output(compressor, mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 121, in render_output
+    return compressor.output(mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 46, in output
+    self.split_contents()
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 19, in split_contents
+    basename = self.get_basename(attribs['src'])
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/base.py", line 89, in get_basename
+    "compressed" % (url, base_url))
+UncompressableFileError: 'demo/js/highcharts/js/highcharts.js' isn't accessible via COMPRESS_URL ('/static/') and can't be compressed
+ERROR 2015-10-25 08:26:50,651 base 18003 4421062656 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 108, in render_compressed
+    rendered_output = self.render_output(compressor, mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 121, in render_output
+    return compressor.output(mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 46, in output
+    self.split_contents()
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 20, in split_contents
+    filename = self.get_filename(basename)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/base.py", line 140, in get_filename
+    self.finders and " or with staticfiles." or "."))
+UncompressableFileError: 'demo/js/jquery/jquery.min.js' could not be found in the COMPRESS_ROOT '/Users/JackyTu/website/newbrandx/sites/newbrandx/public/static' or with staticfiles.
+ERROR 2015-10-25 08:46:55,095 base 18003 4485636096 Internal Server Error: /milk/milk_chart
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 23, in milk_chart_view
+    with open(json_file) as data_file:
+IOError: [Errno 2] No such file or directory: 'rankx/reports/milk/milk_2015_10.json'
+ERROR 2015-10-25 08:47:48,856 base 18003 4485636096 Internal Server Error: /milk/milk_chart
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 23, in milk_chart_view
+    with open(json_file) as data_file:
+IOError: [Errno 2] No such file or directory: 'rankx/reports/milk/milk_2015_10.json'
+ERROR 2015-10-25 08:58:57,494 base 18003 4422430720 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'compress', expected 'endblock'
+ERROR 2015-10-25 08:59:56,414 base 18003 4422430720 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'compress', expected 'endblock'
+ERROR 2015-10-25 09:00:16,488 base 18003 4422430720 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 191, in compress
+    nodelist = parser.parse(('endcompress',))
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'static', expected 'endcompress'
+ERROR 2015-10-25 09:30:07,604 base 18003 4422430720 Internal Server Error: /milk
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 19, in milk
+    return render(request, 'rankx/milk.html', context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 108, in render_compressed
+    rendered_output = self.render_output(compressor, mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/templatetags/compress.py", line 121, in render_output
+    return compressor.output(mode, forced=forced)
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 46, in output
+    self.split_contents()
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/js.py", line 19, in split_contents
+    basename = self.get_basename(attribs['src'])
+  File "/Library/Python/2.7/site-packages/django_compressor-1.5-py2.7.egg/compressor/base.py", line 89, in get_basename
+    "compressed" % (url, base_url))
+UncompressableFileError: 'http://code.highcharts.com/highcharts.js' isn't accessible via COMPRESS_URL ('/static/') and can't be compressed
+ERROR 2015-10-25 09:43:03,765 base 36824 4435464192 Internal Server Error: /milk/milk_chart
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.5-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/JackyTu/website/newbrandx/sites/newbrandx/rankx/views.py", line 25, in milk_chart_view
+    with open(json_file) as data_file:
+IOError: [Errno 2] No such file or directory: 'rankx/reports/milk/milk_2015_10.json'
