@@ -2,6 +2,18 @@
 
 {% load thumbnail %}
 {% load i18n %}
+{% load i18n compress %}
+{% load staticfiles %}
+
+{% block scripts %}
+{% compress js %}
+
+<script src="{% static "demo/js/highcharts/js/highcharts.js" %}" type="text/javascript" charset="utf-8"></script>
+<script src="{% static "demo/js/highcharts/js/modules/exporting.js" %}" type="text/javascript" charset="utf-8"></script>
+
+{% endcompress %}
+{% endblock scripts %}
+
 
 {% block title %}
     {% trans "奶粉品牌指数" %} | {{ block.super }}

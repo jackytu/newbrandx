@@ -19,6 +19,7 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^rankx/', views.rankx, name='rank'),
+    url(r'^milk/milk_chart', views.milk_chart_view, name='milk_chart_view'),
     url(r'^milk', views.milk, name='milk'),
     url(r'^cloth/', views.cloth, name='cloth'),
     url(r'^toy/', views.toy, name='toy'),

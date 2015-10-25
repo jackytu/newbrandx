@@ -15,8 +15,6 @@ class Company(models.Model):
     def __unicode__(self):
         return self.name
 
-
-
 class Brand(models.Model):
     name = models.CharField(max_length=200)
     company = models.ForeignKey(Company, related_name = 'company_name')
@@ -31,7 +29,7 @@ class Brand(models.Model):
 class Milk(models.Model):
     brand_record = models.CharField(max_length=200)
     brand_name = models.ForeignKey(Brand, related_name = 'brand_name')
-    index = models.IntegerField(default=0)
+    rank = models.IntegerField(default=0)
     pv = models.IntegerField(default=0)
     taobao_sales = models.IntegerField(default=0)
     jd_sales = models.IntegerField(default=0)
@@ -49,4 +47,5 @@ class Milk(models.Model):
 
     def __unicode__(self):
         return self.brand_record
+
 
