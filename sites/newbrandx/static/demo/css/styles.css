@@ -4556,7 +4556,7 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 30px;
 }
 #faux-foot {
-  /*height: 100px;*/
+  height: 330px;
 }
 .footer {
   position: relative;
