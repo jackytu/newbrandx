@@ -4477,7 +4477,7 @@ you can use the generic selector below, but it's slower:
 }
 .logo {
   width: 140px;
-  height: 108px;
+  height: 40px;
 }
 .header-content {
   height: 108px;
@@ -4556,7 +4556,7 @@ you can use the generic selector below, but it's slower:
   margin-bottom: 30px;
 }
 #faux-foot {
-  height: 330px;
+  /*height: 100px;*/
 }
 .footer {
   position: relative;
