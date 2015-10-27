@@ -24,7 +24,15 @@ urlpatterns = [
     url(r'^cloth/', views.cloth, name='cloth'),
     url(r'^toy/', views.toy, name='toy'),
     url(r'^edu/', views.edu, name='edu'),
-    url(r'^health/', views.health, name='edu'),
+    url(r'^health/', views.health, name='health'),
+
+    url(r'^history/', views.history, name='history'),
+    url(r'^legal/', views.legal, name='legal'),
+    url(r'^intro/', views.intro, name='intro'),
+    url(r'^sitemap', views.sitemap, name='sitemap'),
+    url(r'^welcome/', views.welcome, name='welcome'),
+
+
     url(r'^admin/', include(admin.site.urls)),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^jsi18n/$', 'django.views.i18n.javascript_catalog', js_info_dict),

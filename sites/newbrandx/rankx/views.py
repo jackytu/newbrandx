@@ -29,14 +29,29 @@ def milk_chart_view(request):
         data = json.loads(data_file.read())
     return HttpResponse(json.dumps(data), content_type='application/json')
 
+def welcome(request):
+    return render(request, 'rankx/about/welcome.html')
+
+def intro(request):
+    return render(request, 'rankx/about/intro.html')
+
+def history(request):
+    return render(request, 'rankx/about/history.html')
+
+def sitemap(request):
+    return render(request, 'rankx/about/sitemap.html')
+
+def legal(request):
+    return render(request, 'rankx/about/legal.html')
+
 def cloth(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'rankx/about/welcome.html')
 
 def toy(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'rankx/about/welcome.html')
 
 def edu(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'rankx/about/welcome.html')
 
 def health(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'rankx/about/welcome.html')

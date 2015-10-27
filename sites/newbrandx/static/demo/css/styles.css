@@ -4478,6 +4478,7 @@ you can use the generic selector below, but it's slower:
 .logo {
   width: 140px;
   height: 40px;
+  padding-top: 10px;
 }
 .header-content {
   height: 108px;
