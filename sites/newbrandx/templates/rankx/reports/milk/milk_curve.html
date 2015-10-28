@@ -21,8 +21,9 @@ $(function() {
         chart: {
             renderTo: 'chart_panel',
             type: 'line',
+            height: 500,
         },
-        legend: { enabled: false },
+        legend: { enabled: true },
         title: { text: '品牌变化趋势' },
         subtitle: { text: '最近2年数据' },
         xAxis: { 
@@ -33,8 +34,10 @@ $(function() {
                     rotation: -45 
                 } 
             },
+
         yAxis: { 
-            title: { text: '指数' } },
+            title: { text: '指数' } 
+        },
         series: [{}],
     };
 
