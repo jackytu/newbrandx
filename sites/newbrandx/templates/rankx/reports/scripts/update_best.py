@@ -10,10 +10,11 @@ today = datetime.date.today()
 report_tittle = "milk/milk_{}.html".format(today.strftime("%Y_%m"))
 
 first = today.replace(day=1)
-last_year = first - datetime.timedelta(days=365)
-rang_low =  today.strftime("%Y-01-01")
-rang_high = today.strftime("%Y-12-31")
-this_year = today.year
+last_year = first - datetime.timedelta(days=365*2)
+
+rang_low =  last_year.strftime("%Y-01-01")
+rang_high = last_year.strftime("%Y-12-31")
+this_year = today.year - 2
 
 conn= MySQLdb.connect(
         host='localhost',

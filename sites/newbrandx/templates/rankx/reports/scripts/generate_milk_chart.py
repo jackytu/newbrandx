@@ -48,6 +48,7 @@ pub_date_dict = {}
 
 for ii in info:
     (pub_date_raw, rank, brand_raw) = ii
+    print pub_date_raw, rank, brand_raw
     pub_date = pub_date_raw.strftime("%Y-%m")
     pub_date_utc = int(time.mktime(pub_date_raw.timetuple()))
     brand = brand_raw.replace(" ", "")
@@ -66,7 +67,7 @@ for (utc, timestamp) in pub_date_dict_sort:
 output_data['x-aris'] = pub_date_list
 output_data['chart_data'] = []
 
-print brand_data
+#print brand_data
 
 
 for brand, data in brand_data.items():

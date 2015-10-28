@@ -11,8 +11,8 @@ report_tittle = "milk/milk_{}.html".format(today.strftime("%Y_%m"))
 
 first = today.replace(day=1)
 last_year = first - datetime.timedelta(days=365)
-rang_low = last_year.strftime("%Y-%m-01")
-rang_high = today.strftime("%Y-%m-01")
+rang_low = last_year.strftime("%Y-%m-02")
+rang_high = today.strftime("%Y-%m-02")
 month_high = today.strftime("%Y_%m")
 month_low = last_year.strftime("%Y_%m")
 conn= MySQLdb.connect(
@@ -72,8 +72,8 @@ for ii in info:
         brand_data[brand]['last_year'] = rank
 
     sql = "update rankx_milk set rank = {} where brand_name_id = {} and pub_date = '{}'".format(rank, brand_id, pub_date)
+    print sql
     cur.execute(sql)
-    time.sleep(2)
 
 print brand_data
 
@@ -83,11 +83,11 @@ conn.close()
 
 for (brand, data) in brand_data.items():
     if data['this_year'] > data['last_year']:
-        data['trend'] = 'up'
+        data['trend'] = "<img src='static/demo/img/ui/down.png'></img>"
     elif data['this_year'] == data['last_year']:
         data['trend'] = '-'
     else:
-        data['trend'] = 'down'
+        data['trend'] = "<img src='static/demo/img/ui/upup.png'></img>"
 
     if data['last_year'] != 0:
         rating = abs((float(data['this_year']) - float(data['last_year']))/float(data['last_year']) * 100)

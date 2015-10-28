@@ -4668,6 +4668,15 @@ you can use the generic selector below, but it's slower:
 .nav-profile {
   margin-bottom: 0;
 }
+
+.upup-pic
+{
+  background: url(/static/demo/img/ui/upup.png)
+}
+.down-pic{
+  background: url(/static/demo/img/ui/down.png)
+}
+
 .account-pages .content,
 .account-profile .tab-content {
   padding: 30px;
