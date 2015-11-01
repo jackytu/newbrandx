@@ -18,9 +18,11 @@ def getmethod(url):
                 'User-Agent': "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; Media Center PC 6.0; InfoPath.3; .NET CLR 3.5.30729; .NET CLR 2.0.50727; .NET CLR 3.0.30729)",
                 }
     req=urllib.request.Request(url,headers=headers1)
-    scode = urllib.request.urlopen(req).read().decode('gbk', 'ignore')
-    writeinfile('test.txt', scode)
-    #print(scode)
+    html = urllib.request.urlopen(req).read()
+    #scode = str(html, "gbk").encode("utf8")
+    #scode = urllib.request.urlopen(req).read()
+    scode = html.decode("gbk","ignore")
+    writeinfile('output.txt', scode)
     return scode
 '''
 def findallgoods(s):
